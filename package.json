@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A responsive portfolio website built with HTML, CSS, and JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "dev": "http-server . -p 8000 -o",
+    "start": "http-server . -p 8000"
+  },
+  "keywords": [
+    "portfolio",
+    "frontend",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "ABUBAKARI ZAKARIA",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
