@@ -219,9 +219,9 @@ nav {
 
 .hero-image img {
     width: 100%;
-    max-width: 720px;
-    height: 520px;
-    object-fit: cover;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
     object-position: center center;
     border-radius: 20px;
     box-shadow: var(--box-shadow);
