@@ -221,11 +221,13 @@
                         <p>Koforidua, Ghana</p>
                     </div>
                 </div>
-                <form id="contact-form" class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <input type="text" placeholder="Subject">
-                    <textarea placeholder="Your Message" required></textarea>
+                <form id="contact-form" class="contact-form" action="https://formsubmit.co/papisticzakari@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="https://zackconnect.github.io/profolio/">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" placeholder="Your Message" required></textarea>
                     <button type="submit" class="btn">Send Message</button>
                     <p class="form-message" aria-live="polite"></p>
                 </form>

@@ -78,21 +78,20 @@ const contactForm = document.getElementById('contact-form');
 const formMessage = document.querySelector('.form-message');
 
 contactForm.addEventListener('submit', event => {
-    event.preventDefault();
-    const name = contactForm.querySelector('input[type="text"]').value.trim();
-    const email = contactForm.querySelector('input[type="email"]').value.trim();
-    const message = contactForm.querySelector('textarea').value.trim();
+    const name = contactForm.querySelector('input[name="name"]').value.trim();
+    const email = contactForm.querySelector('input[name="email"]').value.trim();
+    const message = contactForm.querySelector('textarea[name="message"]').value.trim();
 
     if (!name || !email || !message) {
+        event.preventDefault();
         formMessage.textContent = 'Please fill in all required fields.';
         formMessage.classList.add('error');
         formMessage.classList.remove('success');
         return;
     }
 
-    formMessage.textContent = 'Thank you, your message has been sent!';
+    formMessage.textContent = 'Sending your message...';
     formMessage.classList.remove('error');
     formMessage.classList.add('success');
-    contactForm.reset();
 });
 // no image optimization feature (removed)
