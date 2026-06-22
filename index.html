@@ -1,256 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABUBAKARI ZAKARIA | Portfolio</title>
-    <link rel="stylesheet" href="Style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Zackconnect - frontend developer and AWS cloud practitioner.">
+  <title>Zackconnect | Portfolio</title>
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Header & Navigation -->
-    <header>
-        <nav>
-            <div class="logo">ABUBAKARI ZAKARIA</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </nav>
-    </header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Zackconnect</a>
+      <nav class="nav-menu" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
+  <main>
     <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">ABUBAKARI ZAKARIA</span></h1>
-                <h2>Frontend Developer & AWS Cloud Practitioner</h2>
-                <p>I hold a Bachelor of Technology (B.Tech) in Computer Science (2025) and a Higher National Diploma (HND) in Computer Networking Management (2021–2023). As a Frontend Developer, I specialize in building responsive, user-friendly, and modern web applications using contemporary web technologies. My background in computer science, networking, and cloud computing enables me to develop scalable, cloud-ready solutions while maintaining a strong focus on performance, usability, and user experience. I am passionate about continuous learning, problem-solving, and creating innovative digital solutions that deliver real value to users and organizations.</p>
-                <a href="#contact" class="btn">Get In Touch</a>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Frontend Developer</span>
+          <h1>Hi, I'm <span class="highlight">Abubakari Zakaria</span></h1>
+          <p class="hero-text">I build responsive websites and cloud-ready applications using HTML, CSS, JavaScript, and AWS. I combine clean design with strong performance and fast delivery.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+            <a href="#projects" class="btn btn-secondary">View Work</a>
+          </div>
+          <div class="hero-meta">
+            <div>
+              <strong>HND in Networking</strong>
+              <span>2021 - 2023</span>
             </div>
-            <div class="hero-image">
-                <img id="profile-img" src="profile.jpg" alt="ABUBAKARI ZAKARIA">
+            <div>
+              <strong>B.Tech in CS</strong>
+              <span>2023 - 2025</span>
             </div>
-
+          </div>
         </div>
+
+        <div class="hero-card">
+          <div class="hero-card-inner">
+            <div class="hero-badge">AWS Cloud Practitioner</div>
+            <img src="profile.jpg" alt="Profile photo of Abubakari Zakaria">
+            <div class="hero-stats">
+              <div>
+                <strong>4+</strong>
+                <span>Projects Delivered</span>
+              </div>
+              <div>
+                <strong>3</strong>
+                <span>Years Experience</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <section id="about" class="about">
+      <div class="container section-header">
+        <span class="eyebrow">About Me</span>
+        <h2>Building digital solutions for growth and clarity</h2>
+        <p>I design and develop modern web experiences that are built to perform, easy to maintain, and simple for users to navigate.</p>
+      </div>
+      <div class="container about-grid">
+        <div class="about-copy">
+          <p>I am a frontend developer with a strong foundation in computer science and networking. I enjoy turning complex ideas into interfaces that look professional and work smoothly across devices.</p>
+          <div class="about-cards">
+            <article>
+              <i class="fas fa-laptop-code"></i>
+              <h3>Frontend Development</h3>
+              <p>Responsive websites, fast interactions, and polished UI craftsmanship.</p>
+            </article>
+            <article>
+              <i class="fas fa-cloud"></i>
+              <h3>Cloud Ready</h3>
+              <p>Deployable applications with AWS best practices and stable hosting.</p>
+            </article>
+            <article>
+              <i class="fas fa-users"></i>
+              <h3>Collaboration</h3>
+              <p>Clear communication, reliable timelines, and solutions that meet real needs.</p>
+            </article>
+          </div>
+          <div class="about-actions">
+            <a href="profile.pdf" class="btn btn-outline" target="_blank">Download CV</a>
+            <a href="#contact" class="btn btn-primary">Let's Talk</a>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="profile.jpg" alt="Profile picture of Abubakari Zakaria">
+        </div>
+      </div>
+    </section>
 
-    <!-- About Section -->
-    <!-- Skills Section -->
     <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">My <span class="highlight">Skills</span></h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>HTML5</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>CSS3</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>JavaScript</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Development Tools</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Git</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>GitHub</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Cloud Services</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>AWS Cloud Services</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="container section-header">
+        <span class="eyebrow">Skills</span>
+        <h2>Technologies I work with</h2>
+        <p>From frontend development to cloud deployment, these are the tools I use to build modern web experiences.</p>
+      </div>
+      <div class="container skills-grid">
+        <article class="skill-card">
+          <i class="fab fa-html5"></i>
+          <h3>HTML & CSS</h3>
+          <p>Semantic markup, responsive layouts, and modern styling.</p>
+        </article>
+        <article class="skill-card">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+          <p>Clean interactions, DOM control, and user-friendly logic.</p>
+        </article>
+        <article class="skill-card">
+          <i class="fab fa-react"></i>
+          <h3>React</h3>
+          <p>Component-driven UI for scalable projects and reusable code.</p>
+        </article>
+        <article class="skill-card">
+          <i class="fab fa-git-alt"></i>
+          <h3>Git & GitHub</h3>
+          <p>Version control, collaboration, and deploy-ready workflows.</p>
+        </article>
+        <article class="skill-card">
+          <i class="fas fa-cloud"></i>
+          <h3>AWS Cloud</h3>
+          <p>Cloud readiness, hosting support, and deployment guidance.</p>
+        </article>
+        <article class="skill-card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Mobile-first Design</h3>
+          <p>Interfaces that scale cleanly across phones, tablets, and desktop.</p>
+        </article>
+      </div>
     </section>
 
-    <!-- Projects Section -->
+    <section id="services" class="services">
+      <div class="container section-header">
+        <span class="eyebrow">Services</span>
+        <h2>What I can help you build</h2>
+        <p>Design, development, and deployment services for websites and web applications.</p>
+      </div>
+      <div class="container services-grid">
+        <article class="service-card">
+          <i class="fas fa-code"></i>
+          <h3>Website Development</h3>
+          <p>Modern, responsive websites built from scratch with clean code.</p>
+        </article>
+        <article class="service-card">
+          <i class="fas fa-paint-brush"></i>
+          <h3>UI/UX Design</h3>
+          <p>Clear user flows, polished interfaces, and usable visual design.</p>
+        </article>
+        <article class="service-card">
+          <i class="fas fa-rocket"></i>
+          <h3>Deployment Support</h3>
+          <p>Publishing your project to GitHub Pages or cloud hosting with confidence.</p>
+        </article>
+      </div>
+    </section>
+
     <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">My <span class="highlight">Projects</span></h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Portfolio Website Project">
-                    </div>
-                    <div class="project-info">
-                        <h3>Portfolio Website</h3>
-                        <p>A responsive portfolio built with HTML, CSS, and JavaScript to showcase skills, projects, and contact details.</p>
-                        <div class="project-links">
-                            <a href="#" target="_blank" rel="noopener">Live Demo</a>
-                            <a href="#" target="_blank" rel="noopener">Source</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80" alt="eCommerce UI Project">
-                    </div>
-                    <div class="project-info">
-                        <h3>eCommerce UI</h3>
-                        <p>A clean product storefront layout with interactive cards, filters, and mobile-first design.</p>
-                        <div class="project-links">
-                            <a href="#" target="_blank" rel="noopener">Live Demo</a>
-                            <a href="#" target="_blank" rel="noopener">Source</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Task Manager Project">
-                    </div>
-                    <div class="project-info">
-                        <h3>Task Manager</h3>
-                        <p>A JavaScript-powered task manager with add, edit, and delete actions for productivity and organization.</p>
-                        <div class="project-links">
-                            <a href="#" target="_blank" rel="noopener">Live Demo</a>
-                            <a href="#" target="_blank" rel="noopener">Source</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="container section-header">
+        <span class="eyebrow">Portfolio</span>
+        <h2>Selected projects</h2>
+        <p>Examples of recent work that showcase my approach to design and development.</p>
+      </div>
+      <div class="container projects-grid">
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Portfolio website project">
+          <div class="project-copy">
+            <h3>Portfolio Website</h3>
+            <p>A responsive portfolio for showcasing work, skills, and contact details.</p>
+            <a href="#" class="project-link">Live Demo</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80" alt="Business landing page project">
+          <div class="project-copy">
+            <h3>Business Landing Page</h3>
+            <p>A modern landing page layout built for conversions and brand clarity.</p>
+            <a href="#" class="project-link">Live Demo</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Web application interface project">
+          <div class="project-copy">
+            <h3>Web App Interface</h3>
+            <p>An interactive UI prototype for a productivity or dashboard experience.</p>
+            <a href="#" class="project-link">Live Demo</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Cloud-ready project setup">
+          <div class="project-copy">
+            <h3>Cloud Ready Project</h3>
+            <p>A deployment-ready site built with performance and hosting in mind.</p>
+            <a href="#" class="project-link">Live Demo</a>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2 class="section-title">Client <span class="highlight">Testimonials</span></h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <p>"ABUBAKARI delivered a polished, responsive portfolio with fast communication and thoughtful design."</p>
-                    <h4>Braintds Manager</h4>
-                    <span>Product Manager</span>
-                </div>
-                <div class="testimonial-card">
-                    <p>"The web app experience was clear, modern, and fun to use — exactly what our product needed."</p>
-                    <h4>Mohammed Mouktal</h4>
-                    <span>Startup Founder</span>
-                </div>
-                <div class="testimonial-card">
-                    <p>"Great attention to detail, timely delivery, and a strong grasp of front-end best practices."</p>
-                    <h4>Marfo Agyemen</h4>
-                    <span>Marketing Lead</span>
-                </div>
-                <div class="testimonial-card">
-                    <p>"Professional and dedicated. The work quality exceeded expectations and deadlines were always met."</p>
-                    <h4>Mercy Amankwaa</h4>
-                    <span>Business Developer</span>
-                </div>
-            </div>
-        </div>
+      <div class="container section-header">
+        <span class="eyebrow">Testimonials</span>
+        <h2>Client feedback</h2>
+        <p>Reviews from clients and partners who appreciate good delivery and communication.</p>
+      </div>
+      <div class="container testimonials-grid">
+        <article class="testimonial-card">
+          <p>"Abubakari delivered a clean, professional website with excellent communication throughout the project."</p>
+          <h4>Braintds Manager</h4>
+          <span>Product Manager</span>
+        </article>
+        <article class="testimonial-card">
+          <p>"Fast turnaround, polished design, and a truly responsive experience across devices."</p>
+          <h4>Mohammed Mouktal</h4>
+          <span>Startup Founder</span>
+        </article>
+        <article class="testimonial-card">
+          <p>"A strong grasp of frontend best practices and a reliable partner for web development work."</p>
+          <h4>Marfo Agyemen</h4>
+          <span>Marketing Lead</span>
+        </article>
+        <article class="testimonial-card">
+          <p>"Professional, dependable, and detail-oriented. The final product exceeded expectations."</p>
+          <h4>Mercy Amankwaa</h4>
+          <span>Business Developer</span>
+        </article>
+      </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <h3>Email Me</h3>
-                        <p>papisticzakari@gmail.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Call / WhatsApp</h3>
-                            <p><a href="tel:+233243739221">(+233) 243739221</a></p>
-                            <p><a class="whatsapp-link" href="https://wa.me/233243739221" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Message on WhatsApp</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h3>Location</h3>
-                        <p>Koforidua, Ghana</p>
-                    </div>
-                </div>
-                <form id="contact-form" class="contact-form" action="https://formsubmit.co/papisticzakari@gmail.com" method="POST">
-                    <input type="hidden" name="_next" value="https://zackconnect.github.io/profolio/">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <input type="text" name="subject" placeholder="Subject">
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn">Send Message</button>
-                    <p class="form-message" aria-live="polite"></p>
-                </form>
+      <div class="container contact-grid">
+        <div class="contact-panel">
+          <span class="eyebrow">Contact</span>
+          <h2>Ready to work together?</h2>
+          <p>Send a message if you need a modern website, portfolio, or cloud deployment support. I am available for freelance and full-time roles.</p>
+          <div class="contact-info-blocks">
+            <div class="contact-block">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>papisticzakari@gmail.com</p>
+              </div>
             </div>
+            <div class="contact-block">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Phone</h3>
+                <p><a href="tel:+233243739221">(+233) 243 739 221</a></p>
+              </div>
+            </div>
+            <div class="contact-block">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Location</h3>
+                <p>Koforidua, Ghana</p>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <form id="contact-form" class="contact-form" action="https://formsubmit.co/papisticzakari@gmail.com" method="POST">
+          <input type="hidden" name="_next" value="https://zackconnect.github.io/profolio/">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New message from my portfolio site">
+          <label>
+            <span>Your Name</span>
+            <input type="text" name="name" placeholder="Your Name" required>
+          </label>
+          <label>
+            <span>Your Email</span>
+            <input type="email" name="email" placeholder="Your Email" required>
+          </label>
+          <label>
+            <span>Subject</span>
+            <input type="text" name="subject" placeholder="Subject">
+          </label>
+          <label>
+            <span>Your Message</span>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/abubakari-zakaria-12373227a" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-                <p>&copy; 2026 ABUBAKARI ZAKARIA. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; 2026 ABUBAKARI ZAKARIA. All Rights Reserved.</p>
+      <div class="social-links">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/abubakari-zakaria-12373227a" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
 
-    <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
-    <script src="script.js" defer></script>
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="script.js" defer></script>
 </body>
 </html>
