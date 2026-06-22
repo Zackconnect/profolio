@@ -608,11 +608,12 @@ footer {
 
 .footer-inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
+  flex-direction: column;
+  gap: 12px;
   padding: 26px 0;
+  text-align: center;
 }
 
 .footer-inner p {
